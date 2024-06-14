@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ažuriranje kursne liste</title>
+</head>
+<body>
+    <h1>Ažuriranje kursne liste</h1>
+    <label for="datum">Datum:</label>
+    <input type="date" id="datum">
+    <label for="valuta">Valuta:</label>
+    <select id="valuta">
+        <!-- Options will be populated via JavaScript from web service -->
+    </select>
+    <label for="kurs">Kurs:</label>
+    <input type="number" id="kurs" step="0.01">
+    <button onclick="upisiKurs()">Upiši kurs</button>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

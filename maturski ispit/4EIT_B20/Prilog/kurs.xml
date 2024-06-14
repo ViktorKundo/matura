@@ -1,0 +1,35 @@
+<WebService>
+    <Methods>
+        <Method>
+            <Name>ProcitajKursNaDan</Name>
+            <Description>Чита средњи курс на изабрани дан захтеване валуте из текстуалне датотеке</Description>
+            <Parameters>
+                <Parameter>
+                    <Name>Datum</Name>
+                    <Type>DateTime</Type>
+                </Parameter>
+                <Parameter>
+                    <Name>valuta</Name>
+                    <Type>string</Type>
+                </Parameter>
+            </Parameters>
+            <ReturnType>double</ReturnType>
+            <Code>
+                <![CDATA[
+                    // Putanja do datoteke
+                    string filePath = "kurs.txt";
+
+                    // Čitanje sadržaja datoteke i ispisivanje na ekran
+                    using (StreamReader sr = new StreamReader(filePath))
+                    {
+                        string line;
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            Console.WriteLine(line);
+                        }
+                    }
+                ]]>
+            </Code>
+        </Method>
+    </Methods>
+</WebService>
